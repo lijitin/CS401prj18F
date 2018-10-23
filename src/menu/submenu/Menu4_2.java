@@ -14,7 +14,7 @@ public class Menu4_2 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 4.1");
+		System.out.println("***Menu 4.2***");
 		// set the total score values in GradeEntries
 		// create a TS comparator
 		// add the GradeEntries in a sortedABList with the comparator

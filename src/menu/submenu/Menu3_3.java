@@ -12,7 +12,7 @@ public class Menu3_3 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 3.3");
+		System.out.println("***Menu 3.3***");
 		ConsolePrompter cp = new ConsolePrompter();
 		String targetSite = cp.promptString("Target site? ");
 		

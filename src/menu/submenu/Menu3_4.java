@@ -17,7 +17,7 @@ public class Menu3_4 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 3.4");
+		System.out.println("***Menu 3.4***");
 		// (I'm feeling lazy so lets just create a linked list of employee objects from emp.txt)
 		// uses the employees package.
 		String filePath = "C:\\iit\\2018Fall\\CS401\\eclipse-workspace-cs401\\CS401prj18F\\emp.txt";

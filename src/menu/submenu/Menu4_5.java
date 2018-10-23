@@ -14,7 +14,7 @@ public class Menu4_5 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 4.5");
+		System.out.println("***Menu 4.5**");
 		ABList<GradeEntry> students = data.getGrades();
 		GradeEntryCourseGradeComparator cgcomp = new GradeEntryCourseGradeComparator();
 		SortedABList<GradeEntry> sortedStudents = new SortedABList<GradeEntry>(cgcomp);

@@ -12,7 +12,7 @@ public class Menu3_2 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 3.2");
+		System.out.println("***Menu 3.2***");
 		ConsolePrompter cp = new ConsolePrompter();
 		String targetLastName = cp.promptString("Target last name? ");
 		

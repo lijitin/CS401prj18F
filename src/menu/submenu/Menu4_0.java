@@ -16,7 +16,7 @@ public class Menu4_0 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 4.0");
+		System.out.println("***Menu 4.0***");
 		// prompt 4 integers and store in data
 		WeightFactor weights = data.getWeightFactor();
 		if(!alreadySet) {

@@ -13,7 +13,7 @@ public class Menu4_1 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 4.1");
+		System.out.println("***Menu 4.1***");
 		// sort list by last name
 		ABList<GradeEntry> students = data.getGrades();
 		

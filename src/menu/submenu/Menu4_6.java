@@ -10,7 +10,7 @@ public class Menu4_6 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 4.6");
+		System.out.println("***Back to MainMenu***");
 	}
 
 	@Override

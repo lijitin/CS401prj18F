@@ -9,7 +9,7 @@ import support.DataSearcher;
 public class Menu3_1 implements IMenu{
 	public Menu3_1() {	}
 	public void performFunction(ProgramData data) {
-		System.out.println("YEET 3.1");
+		System.out.println("***Menu 3.1***");
 		ConsolePrompter cp = new ConsolePrompter();
 		String targetFirstName = cp.promptString("Target first name? ");
 		
