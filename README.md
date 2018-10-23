@@ -8,8 +8,8 @@ A CLI program which supports file parsing, search, sort.
 
 ### Package brief description
 #### Package - tree
--> a package which helps in creating a tree data structure for holding menu objects.
--> works closely with the menu package
+- a package which helps in creating a tree data structure for holding menu objects.
+- works closely with the menu package
 "TNode.java"
  - the tree node class. Each node has a single parent or none(null). A node can have multiple child or none.
  - implementation details can be be found in the file.
@@ -21,31 +21,31 @@ A CLI program which supports file parsing, search, sort.
  - handles the logic and the transversing of the created menuTree ADT.
    
 #### Package - customADTs
--> includes reusable data structure components
--> ABList is an Unsorted-Array-Based-List ADT for intermediate storing for input data
--> SortedABList is a Sorted-ArrayBase-List ADT that support sorting of elements.
--> DLLNode is for demonstration of traveling within a linked list instance
+- includes reusable data structure components
+- ABList is an Unsorted-Array-Based-List ADT for intermediate storing for input data
+- SortedABList is a Sorted-ArrayBase-List ADT that support sorting of elements.
+- DLLNode is for demonstration of traveling within a linked list instance
  	
 #### Package - employees
--> a refactored package from previous CS401 lab assignments, for demonstration in traveling within linked lists.
--> implemented with Doubly-Linked-List Nodes (customADTs.DLLNode) to support forward and backward traveling.
+- a refactored package from previous CS401 lab assignments, for demonstration in traveling within linked lists.
+- implemented with Doubly-Linked-List Nodes (customADTs.DLLNode) to support forward and backward traveling.
   
 #### Package - menu
--> a package with the details of each "page" of the menu interface.
--> each class (MenuX.java, MenuX_X.java) represents a page in the interface
--> menus provides a performFunction() method which acts as an API that can link to external function calls.
--> reorganized with subpackage - submenu for second "layer" menus
+- a package with the details of each "page" of the menu interface.
+- each class (MenuX.java, MenuX_X.java) represents a page in the interface
+- menus provides a performFunction() method which acts as an API that can link to external function calls.
+- reorganized with subpackage - submenu for second "layer" menus
   
 #### Package - programADTs
--> a package which stores program specific data types/classes
--> the input data is parsed into different types of declared objects, and are all stored in a ProgramData object.
+- a package which stores program specific data types/classes
+- the input data is parsed into different types of declared objects, and are all stored in a ProgramData object.
 "ProgramData.java"
  - ProgramData class holds the references to all input data and their declared references 
   		i.e. all the input data can be accessed with the ProgramData data object
  - the declared reference to this data object is passed on to the menu objects within the menuTree
   
 #### Package - support
- -> contains helper classes for certain functionalities
+ - contains helper classes for certain functionalities
 "ConsolePrompter.java"
  - helper class which uses Java Scanner class, helps in parsing user input data
  - Contains error checking and re-prompting functionalities. (for more robustness)
