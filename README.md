@@ -10,16 +10,25 @@ A CLI program which supports file parsing, search, sort.
 #### Package - tree
 - a package which helps in creating a tree data structure for holding menu objects.
 - works closely with the menu package
+
 "TNode.java"
  - the tree node class. Each node has a single parent or none(null). A node can have multiple child or none.
  - implementation details can be be found in the file.
+ 
 "TreeLoader.java"
  - a helper class which "ties" the Menu objects into a Tree structure. Uses TNode<T> and the menu package.
  - exports a TNode reference which points to the root of the created tree ADT.
+
 "NodeVisitor.java"
  - the "main program" of the application
  - handles the logic and the transversing of the created menuTree ADT.
    
+#### Package - menu
+- a package with the details of each "page" of the menu interface.
+- each class (MenuX.java, MenuX_X.java) represents a page in the interface
+- menus provides a performFunction() method which acts as an API that can link to external function calls.
+- reorganized with subpackage - submenu for second "layer" menus
+  
 #### Package - customADTs
 - includes reusable data structure components
 - ABList is an Unsorted-Array-Based-List ADT for intermediate storing for input data
@@ -29,13 +38,7 @@ A CLI program which supports file parsing, search, sort.
 #### Package - employees
 - a refactored package from previous CS401 lab assignments, for demonstration in traveling within linked lists.
 - implemented with Doubly-Linked-List Nodes (customADTs.DLLNode) to support forward and backward traveling.
-  
-#### Package - menu
-- a package with the details of each "page" of the menu interface.
-- each class (MenuX.java, MenuX_X.java) represents a page in the interface
-- menus provides a performFunction() method which acts as an API that can link to external function calls.
-- reorganized with subpackage - submenu for second "layer" menus
-  
+
 #### Package - programADTs
 - a package which stores program specific data types/classes
 - the input data is parsed into different types of declared objects, and are all stored in a ProgramData object.
