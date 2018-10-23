@@ -11,15 +11,15 @@ A CLI program which supports file parsing, search, sort.
 - a package which helps in creating a tree data structure for holding menu objects.
 - works closely with the menu package
 
-"TNode.java"
+__"TNode.java"__
  - the tree node class. Each node has a single parent or none(null). A node can have multiple child or none.
  - implementation details can be be found in the file.
  
-"TreeLoader.java"
+__"TreeLoader.java"__
  - a helper class which "ties" the Menu objects into a Tree structure. Uses TNode<T> and the menu package.
  - exports a TNode reference which points to the root of the created tree ADT.
 
-"NodeVisitor.java"
+__"NodeVisitor.java"__
  - the "main program" of the application
  - handles the logic and the transversing of the created menuTree ADT.
    
@@ -42,17 +42,20 @@ A CLI program which supports file parsing, search, sort.
 #### Package - programADTs
 - a package which stores program specific data types/classes
 - the input data is parsed into different types of declared objects, and are all stored in a ProgramData object.
-"ProgramData.java"
+
+__"ProgramData.java"__
  - ProgramData class holds the references to all input data and their declared references 
   		i.e. all the input data can be accessed with the ProgramData data object
  - the declared reference to this data object is passed on to the menu objects within the menuTree
   
 #### Package - support
  - contains helper classes for certain functionalities
-"ConsolePrompter.java"
+
+__"ConsolePrompter.java"__
  - helper class which uses Java Scanner class, helps in parsing user input data
  - Contains error checking and re-prompting functionalities. (for more robustness)
-"DataSearcher.java"
+
+__"DataSearcher.java"__
  - Only used by Menu3 and its submenus
  - Reorganized to search the GradeEntries from data in multiple ways.
    
@@ -71,8 +74,8 @@ Roster data. Menu1, Menu1_1, and Menu1_2 implementation completed. Helper parser
 (22nd Oct 2028) Program Completed. Menus(1-4) and respected functionalities completed. 
 
 ### Project Self-Evaluation: 
-I spent a lot of time revising previously completed classes. Lots of modifications are made. 
-Poorly thought-out during the design phase.
-e.g. Where/how do i store the data? How can instantiated menus access the stored data?
- -> led to massive code rewrite in Menu and submenu classes.
-Could've spent more time in design, and perhaps ask for design reviews from others.
+Lots of time revisiting previously completed classes due to poorly thought-out designs. 
+e.g. Where/how do i store the data? How can instantiated menus access the stored data? which led to massive code rewriting in Menu and submenu classes.
+Should have spent more time in design, and perhaps ask for design reviews from others.
+
+
