@@ -1,6 +1,7 @@
 # CS401prj18F
 A data structure exercise with java.
-Read the included .pdf file for problem details.
+An interactive java console program that takes input from user and manipulate parsed data. 
+Please read the included .pdf file for problem details.
 
 ## Application description
 A CLI program which supports file parsing, search, sort. 
