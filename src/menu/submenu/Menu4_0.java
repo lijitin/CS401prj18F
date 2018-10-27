@@ -21,7 +21,7 @@ public class Menu4_0 implements IMenu{
 		WeightFactor weights = data.getWeightFactor();
 		if(!alreadySet) {
 			ConsolePrompter cp = new ConsolePrompter();
-			System.out.println("Set the weights for each evaluation.");
+			System.out.println("Set the weights for each class component.");
 			weights.setFinalExamWeight(cp.promptInt("Final Exam \t", 0, 100));
 			weights.setMidtermExamWeight(cp.promptInt("Midterm Exam \t", 0, 100));
 			weights.setProjectWeight(cp.promptInt("Project \t" , 0, 100));
