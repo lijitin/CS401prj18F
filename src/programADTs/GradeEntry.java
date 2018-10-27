@@ -44,7 +44,7 @@ public class GradeEntry implements Comparable<GradeEntry> {
 	
 	// calculate total score
 	public void setTotalScore(WeightFactor weights) {
-		this.totalScore = (float) (weights.getFinalExamWeight()*finalScore/100 + weights.getMidtermExamWeight()*midtermScore/100 + 
+		this.totalScore = (weights.getFinalExamWeight()*finalScore/100 + weights.getMidtermExamWeight()*midtermScore/100 + 
 				weights.getProjectWeight()*projectScore/20);
 		float homeworkTotal = 0;
 		for(int i: this.getHomeworkScores()) {
