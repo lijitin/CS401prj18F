@@ -59,6 +59,10 @@ __"ConsolePrompter.java"__
 __"DataSearcher.java"__
  - Only used by Menu3 and its submenus
  - Reorganized to search the GradeEntries from data in multiple ways.
+ 
+ __"GradeParser.java"__
+ - Used by Menu2 for parsing grades.txt into GradeEntry objects
+ 
    
 #### Progress tracking:
 (17th Oct 2018) Rough design of the class structure is drafted.
