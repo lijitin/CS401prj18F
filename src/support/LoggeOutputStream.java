@@ -5,12 +5,12 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TiedOutputStream extends PrintStream{
+public class LoggedOutputStream extends PrintStream{
 	
 	private static final Logger LOGGER = 
 			Logger.getLogger( TiedOutputStream.class.getName() );
 	
-	public TiedOutputStream(PrintStream console) {
+	public LoggedOutputStream(PrintStream console) {
 		super(console);
 		FileHandler fh = null;
 		try {
