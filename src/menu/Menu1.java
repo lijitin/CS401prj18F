@@ -9,8 +9,8 @@ public class Menu1 implements IMenu{
 	// constructor
 	public Menu1() {
 		msg = "***Menu 1***\n"
-				+ "1. Manual Data Feed\n"
-				+ "2. Default\n";
+				+ "\t1. Manual Data Feed\n"
+				+ "\t2. Default\n";
 		inputLowerBound = 1;
 		inputUpperBound = 2;
 	}

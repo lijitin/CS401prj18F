@@ -8,6 +8,8 @@
 package tree;
 
 import menu.*;
+import menu.submenu.Menu1_1;
+import menu.submenu.Menu1_2;
 import menu.submenu.Menu4_0;
 import programADTs.*;
 import support.ConsolePrompter;
@@ -40,8 +42,12 @@ public class NodeVisitor {
 				
 				if(currTNode.getInfo() instanceof Menu7) {	// if is exit node
 					currTNode = null;
+				}else if(currTNode.getInfo() instanceof Menu1_1 || currTNode.getInfo() instanceof Menu1_2){
+					// get back to the root node (since menu 1 does not have an exit menu 1_3 somehow)
+					// and i'm too lazy to add an extra menu, and modifying the documentation. Welp.
+					currTNode = menuTree;	
 				}else {
-					currTNode = menuTree;	// get back to the root node
+					currTNode = currTNode.getParent();	// get back to previous node
 				}
 				
 			}else {
