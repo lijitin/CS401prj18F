@@ -17,8 +17,7 @@ public class GPAMS {
 		TNode<IMenu> menuTree = TreeLoader.getTree();	// getting the menu tree from the static method
 		NodeVisitor reader = new NodeVisitor(menuTree);	// passing the tree to the MenuVisitor class
 		ProgramData data = new ProgramData();	// A custom data structure which holds references to the user input data
-		reader.run(data);	// parse the tree skeet skeet, pass the bits yeet yeet
-		
+		reader.run(data);	// parse the tree and modify the data
 		
 	}
 
