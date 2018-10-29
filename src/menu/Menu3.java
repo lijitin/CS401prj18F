@@ -7,7 +7,7 @@ public class Menu3 implements IMenu{
 	public String msg;
 	public int inputLowerBound, inputUpperBound;
 	public Menu3() {
-		msg = "Menu 3\n"
+		msg = "***Menu 3***\n"
 				+ "\t1. Search by first name\n"
 				+ "\t2. Search by last name\n"
 				+ "\t3. Search by SID\n"

@@ -8,7 +8,7 @@ public class Menu4 implements IMenu{
 	public int inputLowerBound, inputUpperBound;
 	// constructor
 	public Menu4() {
-		msg = "Menu 4\n"
+		msg = "***Menu 4***\n"
 				+ "\t0. Scoring Weight per item\n"
 				+ "\t1. Sorted list by last name\n"
 				+ "\t2. Rankings by total score\n"

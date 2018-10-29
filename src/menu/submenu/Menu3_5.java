@@ -11,7 +11,7 @@ public class Menu3_5 implements IMenu{
 	
 	@Override
 	public void performFunction(ProgramData data) {
-		System.out.println("***Back to MainMenu**");
+		System.out.println("***Back to MainMenu***");
 	}
 
 	@Override

@@ -20,7 +20,7 @@ public class Menu3_4 implements IMenu{
 		System.out.println("***Menu 3.4***");
 		// (I'm feeling lazy so lets just create a linked list of employee objects from emp.txt)
 		// uses the employees package.
-		String filePath = "C:\\iit\\2018Fall\\CS401\\eclipse-workspace-cs401\\CS401prj18F\\emp.txt";
+		String filePath = System.getProperty("user.dir") + "\\emp.txt";
 		EmployeeParse parser = new EmployeeParse(filePath);
 		ArrayList<Employee> employeeList = parser.getEmployeeList();
 		// create a custom doubly-linked-list of employees
@@ -72,7 +72,7 @@ public class Menu3_4 implements IMenu{
 				System.out.println("curr >> " + tmp.getInfo());
 				while(i > 0) {
 					if(tmp.getBack() == null) {
-						System.out.format("%1$d >> NULL, CANNOT GO THAT FAR BACK.", i);
+						System.out.format("%1$d >> NULL, CANNOT GO THAT FAR BACK.\n", i);
 						break;
 					}
 					tmp = tmp.getBack();
