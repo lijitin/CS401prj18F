@@ -76,7 +76,9 @@ Roster data. Menu1, Menu1_1, and Menu1_2 implementation completed. Helper parser
 
 (21st Oct 2018) Implemented Comparators classes for GradeEntry class. Implemented Sorted-ArrayBased-List for sorting GradeEntries. Added new toString methods to suit different printing variants for menu4 submenus. Modified linear search (find) method in SortedABList to support recursive binary search. Added unimplemented menus (5,6).
 
-(22nd Oct 2028) Program Completed. Menus(1-4) and respected functionalities completed. 
+(22nd Oct 2018) Program Completed. Menus(1-4) and respected functionalities completed. 
+
+(29th Oct 2018) MANUAL.md completed.
 
 ### Project Self-Evaluation: 
 Lots of time revisiting previously completed classes due to poorly thought-out designs. 
