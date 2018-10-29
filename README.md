@@ -55,6 +55,8 @@ __"ProgramData.java"__
 __"ConsolePrompter.java"__
  - helper class which uses Java Scanner class, helps in parsing user input data
  - Contains error checking and re-prompting functionalities. (for more robustness)
+ - Uses java library Logger package for logging user inputs.
+ - Logged file is named as "ConsolePrompterLog.txt"
 
 __"DataSearcher.java"__
  - Only used by Menu3 and its submenus
@@ -63,7 +65,10 @@ __"DataSearcher.java"__
  __"GradeParser.java"__
  - Used by Menu2 for parsing grades.txt into GradeEntry objects
  
-   
+ __"LoggedOutputStream.java"__
+ - A standard output stream substitude for printing.
+ - Logs all console outpus via System.out.print(s) to a file named "ConsolePrintLog.txt"
+ 
 #### Progress tracking:
 (17th Oct 2018) Rough design of the class structure is drafted.
 
