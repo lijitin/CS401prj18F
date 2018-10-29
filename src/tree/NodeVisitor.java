@@ -10,7 +10,9 @@ package tree;
 import menu.*;
 import menu.submenu.Menu1_1;
 import menu.submenu.Menu1_2;
+import menu.submenu.Menu3_5;
 import menu.submenu.Menu4_0;
+import menu.submenu.Menu4_6;
 import programADTs.*;
 import support.ConsolePrompter;
 
@@ -46,6 +48,8 @@ public class NodeVisitor {
 					// get back to the root node (since menu 1 does not have an exit menu 1_3 somehow)
 					// and i'm too lazy to add an extra menu, and modifying the documentation. Welp.
 					currTNode = menuTree;	
+				}else if(currTNode.getInfo() instanceof Menu3_5 || currTNode.getInfo() instanceof Menu4_6) {
+					currTNode = menuTree;
 				}else {
 					currTNode = currTNode.getParent();	// get back to previous node
 				}

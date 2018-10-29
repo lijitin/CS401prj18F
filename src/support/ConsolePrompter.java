@@ -10,16 +10,31 @@
 package support;
 
 import java.awt.Color;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.logging.*;
 
 public class ConsolePrompter {
 
+	private static final Logger LOGGER = 
+			Logger.getLogger( ConsolePrompter.class.getName() );
+	
 	public int i;
 	public float f;
 	public String s;
 	public Color c;
 	private Scanner in;
+	
+	public ConsolePrompter() {
+		FileHandler fh = null;
+		try {
+			fh = new FileHandler("ConsolePrompterLog.txt");
+		}catch(Exception e) {
+		}
+		LOGGER.addHandler(fh);
+		LOGGER.setLevel(Level.ALL);
+	}
 	
 	public int promptInt(String msg, int lower, int upper) {	// takes a msg and print it before scanning for input
 		in = new Scanner(System.in);
@@ -35,10 +50,11 @@ public class ConsolePrompter {
 				}
 			}catch(Exception InputMismatchException) {
 				System.err.println("Input is invalid. Please try again.");
-				this.in.nextLine();
+				LOGGER.log(Level.WARNING, "Invalid user input: {0}", this.in.nextLine());
 				invalidInput = true;
 			}
 		}while(invalidInput);
+		LOGGER.log( Level.FINE, "Captured and returned user input: {0}", this.i);
 		return this.i;
 	}
 	public float promptFloat(String msg) {	// takes a msg and print it before scanning for input
