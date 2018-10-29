@@ -1,9 +1,7 @@
 package support;
 
 import java.io.PrintStream;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 public class LoggedOutputStream extends PrintStream{
 	
