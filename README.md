@@ -84,7 +84,7 @@ Roster data. Menu1, Menu1_1, and Menu1_2 implementation completed. Helper parser
 
 (22nd Oct 2018) Program Completed. Menus(1-4) and respected functionalities completed. 
 
-(29th Oct 2018) Newly added logging functionalities in "GPAMS.java" and "support.ConsolePrompter.java". Documentation updated and completed (for now ._.).
+(29th Oct 2018) Newly added logging functionalities in "GPAMS.java" and "support.ConsolePrompter.java". Documentation updated and completed (for now ._.)
 
 ### Project Self-Evaluation: 
 Lots of time revisiting previously completed classes due to poorly thought-out designs. 
@@ -94,6 +94,7 @@ Should have spent more time in design, and perhaps ask for design reviews from o
 Regarding logging functionalities: I was not thorough enough when reading the requirement documentation, which leads to missing out this component. Luckily my design was modular (enough) such that adding this function afterwards was not too difficult.
 
 Overall, it was rather refreshing experience to write a full-blown program following (well, as much as I could) proper software development methods (i.e. Analysis, Design, Implementation, Documentation ... etc) as previously I only have experience in writing code snippets for solving smaller problem sets. 
+With multiple targets/requirements to fulfill, I realized how important code organization is, and am really glad that I did comment my code during implementation phase.
 
 #### Further improvements: 
 Menu 5 and 6 is not implemented at all. They could be implemented rather quickly (I suppose) as the used classes already contains the required functions for removing and adding new elements.
