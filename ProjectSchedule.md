@@ -8,7 +8,7 @@ This file contains the proposed schedule and the time estimation for this projec
 - Testing and verification, i.e. using the program and finding defects
 - Documentation, i.e. document each class and its uses, UML class diagrams, to illustrate class usage
 
-# Estimated required time
+# Time required estimation
 (In reality, these phases would overlap with each other, rather significantly)
 ## Problem analysis - 30mins
 ## Design - 3hrs
