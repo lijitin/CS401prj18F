@@ -1,8 +1,8 @@
 # CS401prj18F
-~ Ji Tin Justin Li (29th Oct 2018)
+~ Ji Tin Justin Li (29th Oct 2018) ~ jli208@hawk.iit.edu ~
 
 A data structure exercise with java.
-An interactive java console program that takes input from user and manipulate parsed data. 
+An interactive java console program that takes input from user and manipulates parsed data. 
 Please read the included .pdf file for problem details.
 
 ## Application description
