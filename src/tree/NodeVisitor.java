@@ -8,11 +8,7 @@
 package tree;
 
 import menu.*;
-import menu.submenu.Menu1_1;
-import menu.submenu.Menu1_2;
-import menu.submenu.Menu3_5;
-import menu.submenu.Menu4_0;
-import menu.submenu.Menu4_6;
+import menu.submenu.*
 import programADTs.*;
 import support.ConsolePrompter;
 
