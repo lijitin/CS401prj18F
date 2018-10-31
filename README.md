@@ -100,6 +100,6 @@ With multiple targets/requirements to fulfill, I realized how important code org
 Menu 5 and 6 is not implemented at all. They could be implemented rather quickly (I suppose) as the used classes already contains the required functions for removing and adding new elements.
 
 The sorting method implemented is rather inefficient. Although it does get the job done, the inefficiency would really show when a large 
-dataset is provided. (I believe it's __n^2 log n__ for the current implementation, generally speaking) Implementing mergesort or anything else would be miles better than the current one.
+dataset is provided. (I believe it's __n^2 log n__ for the current implementation, generally speaking) Implementing mergesort or anything else would be miles better than what's being done here.
 
 
