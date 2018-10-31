@@ -23,7 +23,7 @@ __"TreeLoader.java"__
 
 __"NodeVisitor.java"__
  - the "main program" of the application
- - handles the logic and the transversing of the created menuTree ADT.
+ - handles the logic and the traversing of the created menuTree ADT.
    
 #### Package - menu
 - a package with the details of each "page" of the menu interface.
@@ -73,7 +73,7 @@ __"DataSearcher.java"__
 #### Progress tracking:
 (17th Oct 2018) Rough design of the class structure is drafted.
 
-(18th Oct 2018) Menu interface API completed. Operations/ functionalities are already linked to the API classes in the menu package. Default menu messages completed. TreeLoader implemented. menuTree construction via static method in TreeLoader successful. menuTree transverion with NodeVisitor class implemented. Transversion within the menuTree is completed.
+(18th Oct 2018) Menu interface API completed. Operations/ functionalities are already linked to the API classes in the menu package. Default menu messages completed. TreeLoader implemented. menuTree construction via static method in TreeLoader successful. menuTree traversal with NodeVisitor class implemented. Traversal within the menuTree is completed.
 
 (19th Oct 2018) Newly implemented ProgramdData class for holding user input data references. Implemented Roster class for holding
 Roster data. Menu1, Menu1_1, and Menu1_2 implementation completed. Helper parser.GradeParser class implemented together with class Menu2. GradeParser parses the given file into GradeEntry objects, and are stored in ProgramData.
