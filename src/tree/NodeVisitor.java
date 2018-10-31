@@ -1,5 +1,5 @@
 /* "NodeVisitor.java"
- * A class which takes in a tree object and transverse around it based on user input.
+ * A class which takes in a tree object and traverse in it based on user input.
  * Works in conjunction with Menu classes.
  * Hopefully the comments helps in reading this messy code :(
  * 
@@ -27,7 +27,7 @@ public class NodeVisitor {
 	}
 	
 	public void run(ProgramData data)
-	// Transverse the tree
+	// Traverse the tree
 	{
 		ConsolePrompter prompter = new ConsolePrompter();
 		int choice = 0;
