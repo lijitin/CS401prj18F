@@ -8,7 +8,7 @@
 package tree;
 
 import menu.*;
-import menu.submenu.*
+import menu.submenu.*;
 import programADTs.*;
 import support.ConsolePrompter;
 
