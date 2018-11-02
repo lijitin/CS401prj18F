@@ -6,15 +6,11 @@
  * The package details are documented in README.md
  */
 
-import java.io.*;
-
-
-
+import java.io.PrintStream;
 import menu.*;
 import programADTs.*;
 import tree.*;
-
-import support.TiedOutputStream;
+import support.*;
 
 public class GPAMS {
 	
@@ -23,8 +19,8 @@ public class GPAMS {
 		// set the standard output stream to a customized stream
 		// which would print on System.out and write on ConsolePrintLog.txt
 		PrintStream console = System.out;
-		TiedOutputStream tos = new TiedOutputStream(console);
-		System.setOut(tos);	
+		LoggedOutputStream los = new LoggedOutputStream(console);
+		System.setOut(los);	
 		
 		TNode<IMenu> menuTree = TreeLoader.getTree();	// getting the menu tree from the static method
 		NodeVisitor reader = new NodeVisitor(menuTree);	// passing the tree to the MenuVisitor class

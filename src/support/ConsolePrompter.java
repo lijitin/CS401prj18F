@@ -29,9 +29,10 @@ public class ConsolePrompter {
 	public ConsolePrompter() {
 		FileHandler fh = null;
 		try {
-			fh = new FileHandler("ConsolePrompterLog.txt");
+			fh = new FileHandler(System.getProperty("user.dir") + "\\ConsolePrompterLog.txt");
 		}catch(Exception e) {
 		}
+		fh.setFormatter(new SimpleFormatter());
 		LOGGER.addHandler(fh);
 		LOGGER.setLevel(Level.ALL);
 	}
@@ -40,18 +41,22 @@ public class ConsolePrompter {
 		in = new Scanner(System.in);
 		boolean invalidInput = true;
 		do {
-			try {
-				System.out.print(msg);
+			System.out.print(msg);
+			if(this.in.hasNextInt()) {
 				this.i = this.in.nextInt();
 				invalidInput = false;
 				if(this.i < lower || this.i > upper) {
 					invalidInput = true;
-					throw new InputMismatchException();
+					System.err.println("Input is out of range. Please try again.");
+					LOGGER.log(Level.WARNING, "Invalid user input - out of range: {0}", this.i);
+					this.in.nextLine();	// skip a line
+					continue;
 				}
-			}catch(Exception InputMismatchException) {
-				System.err.println("Input is invalid. Please try again.");
-				LOGGER.log(Level.WARNING, "Invalid user input: {0}", this.in.nextLine());
+			}else {
+				System.err.println("Input is invalid. Please enter an integer.");
+				LOGGER.log(Level.WARNING, "Invalid user input - not an integer: {0}", this.in.nextLine());
 				invalidInput = true;
+				continue;
 			}
 		}while(invalidInput);
 		LOGGER.log( Level.FINE, "Captured and returned user input: {0}", this.i);

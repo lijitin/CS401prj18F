@@ -6,15 +6,16 @@ import java.util.logging.*;
 public class LoggedOutputStream extends PrintStream{
 	
 	private static final Logger LOGGER = 
-			Logger.getLogger( TiedOutputStream.class.getName() );
+			Logger.getLogger( LoggedOutputStream.class.getName() );
 	
 	public LoggedOutputStream(PrintStream console) {
 		super(console);
 		FileHandler fh = null;
 		try {
-			fh = new FileHandler("ConsolePrintLog.txt");
+			fh = new FileHandler(System.getProperty("user.dir") + "\\ConsolePrintLog.txt");
 		}catch(Exception e) {
 		}
+		fh.setFormatter(new SimpleFormatter());	// set the format of the log file
 		LOGGER.addHandler(fh);
 		LOGGER.setLevel(Level.ALL);
 	}
