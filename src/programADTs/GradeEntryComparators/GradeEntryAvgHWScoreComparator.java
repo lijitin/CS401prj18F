@@ -8,7 +8,11 @@ public class GradeEntryAvgHWScoreComparator implements Comparator<GradeEntry> {
 
 	@Override
 	public int compare(GradeEntry o1, GradeEntry o2) {
-		return (int) (o2.getHWAverageScore() - o1.getHWAverageScore())*100;
+		if(o2.getHWAverageScore() > o1.getHWAverageScore()) {
+			return 1;	// returns positive int if o2 is larger
+		}else {
+			return -1;	// else returns negative
+		}
 	}
 
 }
