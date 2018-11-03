@@ -26,17 +26,24 @@ public class ConsolePrompter {
 	public Color c;
 	private Scanner in;
 	
+	// constructor
 	public ConsolePrompter() {
 		FileHandler fh = null;
 		try {
-			fh = new FileHandler(System.getProperty("user.dir") + "\\ConsolePrompterLog.txt");
+			fh = new FileHandler(System.getProperty("user.dir") + "\\logs\\userInputs" + "\\ConsolePrompterLog");
 		}catch(Exception e) {
 		}
 		fh.setFormatter(new SimpleFormatter());
 		LOGGER.addHandler(fh);
 		LOGGER.setLevel(Level.ALL);
 	}
-	
+	// finalize method - equivalent to destructors - methods is ran when garbage collector re-allocates this object's used memory
+	public void finalize() {
+		System.out.println("ConsolePriompter finalized(), closing file handlers.");
+		for(Handler h: LOGGER.getHandlers()) {
+			h.close();
+		}
+	}
 	public int promptInt(String msg, int lower, int upper) {	// takes a msg and print it before scanning for input
 		in = new Scanner(System.in);
 		boolean invalidInput = true;

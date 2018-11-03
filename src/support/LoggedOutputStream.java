@@ -12,12 +12,16 @@ public class LoggedOutputStream extends PrintStream{
 		super(console);
 		FileHandler fh = null;
 		try {
-			fh = new FileHandler(System.getProperty("user.dir") + "\\ConsolePrintLog.txt");
+			fh = new FileHandler(System.getProperty("user.dir") + "\\logs\\OutputStreamLog.txt");
 		}catch(Exception e) {
 		}
 		fh.setFormatter(new SimpleFormatter());	// set the format of the log file
 		LOGGER.addHandler(fh);
 		LOGGER.setLevel(Level.ALL);
+	}
+	
+	public Logger getLogger() {
+		return LOGGER;
 	}
 	
 	@Override

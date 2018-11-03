@@ -7,6 +7,8 @@
  */
 
 import java.io.PrintStream;
+import java.util.logging.*;
+
 import menu.*;
 import programADTs.*;
 import tree.*;
@@ -26,6 +28,13 @@ public class GPAMS {
 		NodeVisitor reader = new NodeVisitor(menuTree);	// passing the tree to the MenuVisitor class
 		ProgramData data = new ProgramData();	// A custom data structure which holds references to the user input data
 		reader.run(data);	// parse the tree and modify the data
+		
+		// close the file handlers used by LoggedOutputStream los
+		Logger outputStreamLogger = los.getLogger();
+		for(Handler h: outputStreamLogger.getHandlers()) {
+			h.close();		// close each handlers separately to remove .lck files
+		}
+		
 	}
 
 }
