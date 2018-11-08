@@ -7,7 +7,8 @@ A text-based menu is displayed on the console with multiple choices available to
 The user is allowed to navigate through the menus through integer inputs.
 
 ## How do I use/run this application?
-The pre-compiled .class files are included in the CS401prj18F/bin folder. The program can be ran with basic java command:
+The pre-compiled .class files are included in the CS401prj18F/bin folder. 
+In cmd, Navigate to the project folder and run with basic java command:
 ```
 ~/CS401prj19F> java -cp bin GPAMS
 ```
