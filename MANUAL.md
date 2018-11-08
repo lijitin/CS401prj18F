@@ -7,20 +7,27 @@ A text-based menu is displayed on the console with multiple choices available to
 The user is allowed to navigate through the menus through integer inputs.
 
 ## How do I use/run this application?
-Well, since it is java source code, you should be ablt to compile with javac. The code is written in Eclipse IDE, 
-and all the source code is located in CS401prj19F/src folder. 
+The pre-compiled .class files are included in the CS401prj18F/bin folder. The program can be ran with basic java command:
+```
+~/CS401prj19F> java -cp bin GPAMS
+```
+(Please refrain from running the program from other working directories as all the paths for external files are dependent on the current working directory.)
 
-Navigate to the src directory, compile and run:
+If that doesn't work, you might need to compile it again with the included java source code.
+All the source code is located in CS401prj18F/src folder. 
+
+To compile from source code, navigate to the src directory and run:
 
 ```
 ~/CS401prj19F> dir /s /B "*.java" > sources.txt  // finding the path to all source files
 ~/CS401prj19F> mkdir bin
 ~/CS401prj19F> javac -d bin @sources.txt
 ```
-
+And then you can run the program with:
 ```
 ~/CS401prj19F> java -cp bin GPAMS
 ```
+
 Running these commands should open up the main menu of the program.
 ```
 ***ROOT_NODE***
