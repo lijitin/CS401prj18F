@@ -74,13 +74,13 @@ public class GradeEntry implements Comparable<GradeEntry> {
 	}
 	public String toString4_1() {	// print according to menu4_1 requirements, i.e. printing everything.
 		String s = "[ lastName: %1$s, firstName: %2$s, SID: %3$s, site: %4$s, homeworkAverage: %5$.2f,"
-				+ " project: %6$s, midterm: %7$s, final: %8$s, totalScore: %9$s, Grade: %10$s ]";
+				+ " project: %6$s, midterm: %7$s, final: %8$s, totalScore: %9$.2f, Grade: %10$s ]";
 		s = String.format(s, lastName, firstName, SID, site, getHWAverageScore(), this.getProjectScore(),
 				this.getMidtermScore(), this.getFinalScore(), this.getTotalScore(), this.getGrade());
 		return s;
 	}
 	public String toString4_2() {	// lastName, firstName, site, TS
-		String s = "[ lastName: %1$s, firstName: %2$s, site: %4$s, totalScore: %9$s ]";
+		String s = "[ lastName: %1$s, firstName: %2$s, site: %4$s, totalScore: %9$.2f ]";
 		s = String.format(s, lastName, firstName, SID, site, getHWAverageScore(), this.getProjectScore(),
 				this.getMidtermScore(), this.getFinalScore(), this.getTotalScore(), this.getGrade());
 		return s;
